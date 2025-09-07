@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mazingira Day – Eyes on Siwaka</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #064e3b;
+      color: #ecfdf5;
+      line-height: 1.6;
+    }
+
+    section, .poster {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      padding: 60px 20px;
+      text-align: center;
+      background: #064e3b;
+      color: #ecfdf5;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin: 0;
+      line-height: 1.1;
+    }
+    h1 span { color: #bbf7d0; }
+
+    h2, h3 {
+      color: #bbf7d0;
+      font-weight: 800;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      font-size: 1.1rem;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+      z-index: 0;
+    }
+    .c1 { width: 250px; height: 250px; top: 10%; left: 5%; }
+    .c2 { width: 180px; height: 180px; bottom: 15%; right: 10%; }
+    .c3 { width: 120px; height: 120px; top: 70%; left: 15%; }
+
+    .planet {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      background: url("your-photo.jpg") center/cover no-repeat;
+      border: 6px solid #bbf7d0;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      z-index: 1;
+      position: relative;
+    }
+
+    .tag, .highlight {
+      background: #22c55e;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: inline-block;
+      transform: rotate(-6deg);
+      margin: 10px;
+      border-radius: 6px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      z-index: 1;
+      position: relative;
+    }
+    .tag:nth-child(odd),
+    .highlight:nth-child(odd){ transform: rotate(8deg); background:#4ade80; }
+    .tag:nth-child(2n),
+    .highlight:nth-child(2n){ transform: rotate(-10deg); background:#86efac; }
+    .tag:nth-child(3n),
+    .highlight:nth-child(3n){ transform: rotate(5deg); background:#a3e635; }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #bbf7d0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      gap: 20px;
+      z-index: 1;
+      position: relative;
+    }
+    .gallery img {
+      width: 260px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .hashtags {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #bbf7d0;
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Mazingira Day Circle Notice */
+    .notice {
+      margin: 80px auto;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #22c55e, #15803d);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      z-index: 1;
+      position: relative;
+    }
+    .notice h3 { font-size: 1.8rem; margin: 0 0 10px; }
+    .notice p { margin: 0 0 15px; font-size: 1.1rem; }
+    .notice a {
+      background: #bbf7d0;
+      color: #065f46;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    .notice a:hover {
+      background: #fff;
+      color: #065f46;
+    }
+  </style>
+</head>
+<body>
+  <!-- Poster Section -->
+  <div class="poster">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+
+    <h1>EYES<br>ON <span>SIWAKA</span></h1>
+    <div class="planet"></div>
+
+    <div class="tag">Join the Cleanup 🧹</div>
+    <div class="tag">Use the Bins ♻️</div>
+    <div class="tag">Spread Awareness 📢</div>
+    <div class="tag">Love Our Community 💚</div>
+
+    <footer>Towards a Cleaner Community</footer>
+  </div>
+
+  <!-- About Us Section -->
+  <section>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <h2>🌍 Who We Are</h2>
+    <p>
+      We are the <b>#WasteWise Team</b> — passionate Strathmore University students 
+      (<b>Mercy, Faith, Alexander, Hamisa</b>) who couldn’t just look away from 
+      littered streets and clogged drains. Partnering with the 
+      <b>Strathmore Environmental Club</b>, we are combining tech skills 
+      and grassroots passion for a cleaner, greener Siwaka.
+    </p>
+
+    <div class="highlight">💡 Building a Digital Hub</div>
+    <div class="highlight">📢 Awareness & Education</div>
+    <div class="highlight">🤝 Collective Action</div>
+
+    <p>
+      Our mission is simple: <b>transform Siwaka into a clean, sustainable, 
+      and responsible community.</b> Not just a one-day cleanup, 
+      but a system for lasting change.
+    </p>
+
+    <div class="gallery">
+      <img src="cleanup1.jpg" alt="Students cleaning">
+      <img src="bins.jpg" alt="Bins installed">
+      <img src="awareness.jpg" alt="Awareness drive">
+    </div>
+
+    <p class="hashtags">#SiwakaClean #No-more-SiwakaUniversity #EnvironmentalCommunity</p>
+  </section>
+
+  <!-- Mazingira Day Notice -->
+  <section>
+    <div class="circle c1"></div>
+    <div class="circle c3"></div>
+    <div class="notice">
+      <h3>Join us on Mazingira Day</h3>
+      <p>Big Community Clean-up, Eyes on Siwaka</p>
+      <p><b>10th October • Siwaka</b></p>
+      <a href="https://forms.gle/ncmrkv63ETeAj8UdA" target="_blank">Will you be there?</a>
+    </div>
+  </section>
+</body>
+</html>
